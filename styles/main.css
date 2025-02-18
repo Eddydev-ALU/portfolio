@@ -1,11 +1,6 @@
 /* general styles that affect the whole website */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@font-face {
-    font-family: 'Material Symbols Outlined';
-    font-style: normal;
-    src: url(https://example.com/material-symbols.woff) format('woff');
-  }
 *{
     margin: 0;
     padding: 0;
@@ -145,4 +140,105 @@ a:hover span.material-symbols-outlined::before {
 
 .hamburger-icon.open .material-symbols-outlined::before {
     content: 'close'; /* Change to the close icon when open */
+}
+
+/* profile section */
+
+section{
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+#profile{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.pic-container{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+.pic-container img{
+    height: 400px;
+    width: 400px;
+    border: 0.1rem solid #fff;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.text{
+    align-self: center;
+    text-align: center;
+}
+
+.text p{
+    font-weight: 600;
+}
+.text-paragraph{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1-rem;
+}
+.text-paragraph1{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.title{
+    font-size: 3rem;
+    text-align: center;
+}
+.socials{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+.button-cont{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+.fa-brands{
+    font-size: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s ease; 
+    cursor: pointer;
+}
+
+.btn{
+    font-weight: 600;
+    transition: all 0.3s ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.btn0, .btn1{
+    border: 0.1 rem solid rgb(53,53,53);
+    width: 170px;
+}
+.btn1:hover{
+    cursor: pointer;
+    background: white;
+    color: black;
+    border: 0.1rem solid black;
+}
+.btn0:hover{
+    color: white;
+    background: rgb(0,0,0);
+}
+.btn0{
+    background: none;
+}
+
+.btn1{
+    color: white;
+    background: black;
 }
