@@ -15,7 +15,7 @@
         <div class="logo"><a href="index.html">eddy.</a></div>
         <div>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
+                <li><a href="#about" onclick="toggleOffCanvas()">About</a></li>
                 <li><a href="#works">Works</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="https://drive.google.com/file/d/1cCCCiM3ToGfuI2swl211YXbE47hcfvWF/view?usp=sharing" target="_blank">Resume<span class="material-symbols-outlined"></span></a></li>
@@ -55,6 +55,14 @@
             </div>
         </div>
     </section>
+    <div id="off-canvas-menu" class="off-canvas-menu">
+        <div class="off-canvas-content">
+            <h1>About Me</h1>
+            <p>Here is some information about us...</p>
+            <button onclick="toggleOffCanvas()">Close</button>
+        </div>
+    </div>
+    <div id="overlay" class="overlay" onclick="toggleOffCanvas()"></div>
     <script src="./scripts/script.js"></script>
 </body>
 </html>
