@@ -4,9 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/responsivequeries.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <title>Document</title>
 </head>
 <body>
+    <!-- navigation bar -->
+    <div id="main-navbar">
+        <div class="logo"><a href="index.html">eddy.</a></div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#resume">Resume<span class="material-symbols-outlined"></span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="hamburger-navbar">
+        <div class="logo"><a href="index.html">eddy.</a></div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="openMenu()">
+                <span class="material-symbols-outlined">
+                    </span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="openMenu()">About</a></li>
+                <li><a href="#works" onclick="openMenu()">Works</a></li>
+                <li><a href="#contact" onclick="openMenu()">Contact</a></li>
+                <li><a href="#resume" onclick="openMenu()">Resume<span class="material-symbols-outlined"></span></a></li>
+            </div>
+        </div>
+    </div>
     <script src="./scripts/script.js"></script>
 </body>
 </html>

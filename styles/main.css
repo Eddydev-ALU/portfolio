@@ -1,0 +1,148 @@
+/* general styles that affect the whole website */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'Material Symbols Outlined';
+    font-style: normal;
+    src: url(https://example.com/material-symbols.woff) format('woff');
+  }
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Poppins", serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+p{
+    color: rgb(85,85,85);
+}
+a, .btn{
+    transition: all 0.3s ease;
+}
+
+/* main navbar */
+#main-navbar, .nav-links{
+    display: flex;;
+}
+
+#main-navbar{
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    height: auto; 
+    background: rgb(238, 236, 236);
+    border-radius: 50px;
+    margin: 2% auto; 
+    padding: 10px 20px; 
+    border: 1px solid rgb(216, 216, 216);
+}
+.nav-links{
+    gap: 32px;
+    list-style: none;
+    font-size: 16px;
+}
+span.material-symbols-outlined {
+    display: inline; 
+    font-size: 14px;
+}
+a{
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+a:hover{
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-color: rgb(181,181,181);
+}
+a span.material-symbols-outlined::before {
+    content: 'arrow_outward';
+    font-family: 'Material Symbols Outlined';
+}
+
+a:hover span.material-symbols-outlined::before {
+    content: 'arrow_forward';
+}
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+}
+.logo:hover{
+    cursor: pointer;
+}
+.logo a{
+    text-decoration: none;
+}
+.logo a:hover{
+    color: black;
+}
+
+ /* Mobile view hamburger menu */
+
+ #hamburger-navbar{
+    display: none;
+ }
+ .hamburger-menu{
+    position: relative;
+    display: inline-block;
+ }
+ .hamburger-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+ }
+
+ .hamburger-icon .material-symbols-outlined{
+    transition: all 0.3s ease-in-out;
+ }
+ .hamburger-icon .material-symbols-outlined{
+    font-size: 40px;
+
+ }
+ .menu-links{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+ }
+
+ .menu-links a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 26px;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+ }
+
+ .menu-links li{
+    list-style: none;
+ }
+ .menu-links.open{
+    max-height: 300px;
+ }
+
+ .hamburger-icon .material-symbols-outlined::before {
+    content: 'menu'; /* Default icon */
+    font-family: 'Material Symbols Outlined';
+    font-size: 40px;
+    transition: content 0.3s ease-in-out; /* Smooth transition for icon change */
+}
+
+.hamburger-icon.open .material-symbols-outlined::before {
+    content: 'close'; /* Change to the close icon when open */
+}
