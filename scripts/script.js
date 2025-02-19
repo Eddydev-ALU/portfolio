@@ -12,3 +12,21 @@ function toggleOffCanvas() {
     offCanvasMenu.classList.toggle('open');
     overlay.classList.toggle('open');
 }
+
+// Show or hide the scroll-to-top button based on scroll position
+window.addEventListener('scroll', function() {
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+    if (window.scrollY > 300) {
+        scrollToTopBtn.classList.add('show');
+    } else {
+        scrollToTopBtn.classList.remove('show');
+    }
+});
+
+// Scroll to the top of the page when the button is clicked
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}

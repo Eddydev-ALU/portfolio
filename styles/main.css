@@ -418,8 +418,6 @@ section{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 80%;
-    margin-left: 100px;
   }
   
   .article-container {
@@ -464,3 +462,137 @@ section{
     color: black;
     border-color: rgb(163, 163, 163);
   }
+
+  /* contact */
+
+  #contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+  }
+
+  .contact-info-container1{
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: 0.1rem solid rgb(53,53,53);
+    background: rgb(250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+  }
+
+  .contact-info-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+  }
+ 
+  .contact-info-container .fa-brands, .fa-solid{
+    cursor: default;
+    font-size: 20px;
+  }
+  .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row textarea {
+    flex: 1;
+    padding: 15px;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #333; /* Darker text color */
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    background: rgb(225, 225, 226);
+}
+
+.form-row input[type="text"]:last-child,
+.form-row input[type="email"],
+.form-row textarea {
+    margin-right: 0;
+}
+
+.form-row textarea {
+    height: 100px;
+    resize: none;
+}
+.form-row input[type="button"] {
+    padding: 10px 20px;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    border: 0.1rem solid black;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.form-row input[type="button"]:hover {
+    background-color: black;
+    color: white;
+}
+
+/* footer */
+
+footer{
+    height: 8vh;
+    margin: 0 1rem;
+}
+footer p{
+    text-align: center;
+}
+
+/* scroll button */
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: none; /* Remove background color */
+    border: none; /* Remove border */
+    color: black; /* Set the color of the icon */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-to-top i {
+    font-size: 30px; /* Adjust the size of the icon */
+}
+.fa-arrow-up:hover{
+    cursor: pointer;
+}

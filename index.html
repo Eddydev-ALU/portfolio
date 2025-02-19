@@ -49,7 +49,7 @@
             <p class="text-paragraph1">Software Engineer</p>
             <div class="button-cont">
                 <button class="btn btn0" onclick="window.open('./assets/eddy-irasetsa-resume.pdf')">Download Resume</button>
-                <button class="btn btn1" onclick="location.href ='./#contact'">Contact Us</button>
+                <button class="btn btn1" onclick="location.href ='./#contact'">Contact Me</button>
             </div>
             <div class="socials">
                 <a href="https://github.com/Eddydev-ALU"><i class="fa-brands fa-github"></i></a>
@@ -104,7 +104,7 @@
         </div>
         </div>
     <div id="overlay" class="overlay" onclick="toggleOffCanvas()"></div>
-    <div id="experience">
+    <section id="experience">
 <p class="section-text">Explore</p>
 <h1 class="title">Experience</h1>
 <div class="experience-details-container">
@@ -191,8 +191,8 @@
     </div>
 </div>
 </div>
-    </div>
-    <div id="projects">
+</section>
+    <section id="projects">
         <p class="section-text">Browse My Recent</p>
         <h1 class="title">Projects</h1>
         <div class="experience-details-container">
@@ -235,7 +235,44 @@
             </div>
           </div>
         </div>
+    </section>
+<section id="contact">
+    <p class="section-text">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-container1">
+        <div class="contact-info-container">
+            <i class="fa-solid fa-envelope" class="icon contact-icon"></i>
+            <p><a href="mailto:eddyirasetsa@gmail.com">eddyirasetsa@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+            <i class="fa-brands fa-linkedin" class="icon contact-icon"></i>
+            <p><a href="https://www.linkedin.com/in/eddyirasetsa/">Linkedin</a></p>
+        </div>
     </div>
+    <div class="form">
+        <form action="#">
+            <div class="form-row">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+            </div>
+            <div class="form-row">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="form-row">
+                <textarea name="text" placeholder="Message"></textarea>
+            </div>
+            <div class="form-row">
+                <input type="button" value="Send Message">
+            </div>
+        </form>
+    </div>
+</section>
+<footer>
+    <p>Copyright &#169; 2025 Eddy Irasetsa, All Rights Reserved</p>
+</footer>
     <script src="./scripts/script.js"></script>
+    <button id="scrollToTopBtn" class="scroll-to-top" onclick="scrollToTop()">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
 </body>
 </html>
