@@ -130,13 +130,18 @@
     .about-containers {
         flex-direction: column;
     }
+    .about-details-container{
+        width: 90%;
+    }
 
     .details-container {
         margin-bottom: 1rem;
+        margin-right: -30px;
     }
 
     .experience-details-container {
         flex-direction: column;
+        margin-right: 15px;
     }
 
     .article-container {
@@ -159,6 +164,9 @@
 
     .contact-info-container {
         margin: 0.5rem 0;
+    }
+    .contact-info-container .fa-linkedin{
+        margin-left: -142px;
     }
 
     .form {
