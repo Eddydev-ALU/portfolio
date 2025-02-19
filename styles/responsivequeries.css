@@ -93,6 +93,7 @@
     }
     #projects .experience-details-container .about-containers .details-container{
         width: 300px;
+        margin-right: -10px;
     }
 
     .pic-container {
@@ -139,7 +140,7 @@
 
     .details-container {
         margin-bottom: 1rem;
-        margin-right: -38px;
+        margin-right: -42px;
     }
 
     .experience-details-container {
