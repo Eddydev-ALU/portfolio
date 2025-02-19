@@ -48,4 +48,9 @@
     .off-canvas-menu {
         display: none; /* Hide off-canvas menu on mobile */
     }
+    .about-section {
+        display: block; /* Show the about section on mobile */
+        padding: 20px;
+    }
 }
+
