@@ -1,56 +1,308 @@
-@media screen and (max-width: 1200px) {
+/* General styles for smaller screens */
+@media (max-width: 1200px) {
+    section {
+        margin: 0 5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    section {
+        margin: 0 2rem;
+    }
+
+    #main-navbar {
+        width: 90%;
+        margin: 1% auto;
+    }
+
+    .pic-container {
+        height: 300px;
+        width: 300px;
+    }
+
+    .pic-container img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .text-paragraph, .text-paragraph1 {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        padding: 0.8rem;
+        width: 7rem;
+    }
+
+    .btn0, .btn1 {
+        width: 150px;
+    }
+
+    .fa-brands {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 768px) {
     #main-navbar {
         display: none;
     }
+
     #hamburger-navbar {
         display: flex;
-        justify-content: space-between; /* Place items at opposite sides */
-        align-items: center; /* Center items vertically */
-        margin-top: 10px; /* Add some space above */
-        width: 100%; /* Ensure it takes full width */
-        padding: 0 10px; /* Add some padding to the sides */
-    }
-    #hamburger-navbar .logo,
-    #hamburger-navbar .hamburger-icon {
-        display: inline-flex; /* Ensure both items are inline */
-        align-items: center; /* Center items vertically */
-    }
-
-    #hamburger-navbar .hamburger-icon {
-        margin-left: auto; /* Push the icon towards the center */
-        margin-right: 30px; /* Adjust this value to move the icon closer to the center */
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        border-radius: 50px;
+        margin: 1% auto;
+        width: 90%;
     }
 
     .menu-links {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start; /* Align items to the start */
-        padding: 0; /* Remove any padding */
-        margin: 0; /* Remove any margin */
-        margin-right: 30px;
+        position: fixed;
+        top: 60px;
+        right: 0;
+        background-color: white;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+        z-index: 1000;
     }
 
-    .menu-links li {
-        list-style: none;
-        width: 100%; /* Ensure full width */
+    .menu-links.open {
+        max-height: 300px;
     }
 
     .menu-links a {
-        display: block;
-        padding: 10px;
-        text-align: left; /* Align text to the left */
-        font-size: 26px;
-        color: black;
-        text-decoration: none;
-        transition: all 0.3s ease-in-out;
+        font-size: 20px;
     }
 
-    .off-canvas-menu {
-        display: none; /* Hide off-canvas menu on mobile */
+    section {
+        margin: 0 1rem;
     }
+
+    #profile {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .pic-container {
+        height: 200px;
+        width: 200px;
+    }
+
+    .pic-container img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .text {
+        text-align: center;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .text-paragraph, .text-paragraph1 {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 0.5rem;
+        width: 6rem;
+    }
+
+    .btn0, .btn1 {
+        width: 120px;
+    }
+
+    .fa-brands {
+        font-size: 20px;
+    }
+
+    .about-containers {
+        flex-direction: column;
+    }
+
+    .details-container {
+        margin-bottom: 1rem;
+    }
+
+    .experience-details-container {
+        flex-direction: column;
+    }
+
+    .article-container {
+        flex-direction: column;
+    }
+
+    .details-container {
+        width: 100%;
+    }
+
+    .project-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contact-info-container1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info-container {
+        margin: 0.5rem 0;
+    }
+
+    .form {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .form form {
+        width: 100%;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-row input[type="text"],
+    .form-row input[type="email"],
+    .form-row textarea {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .form-row input[type="button"] {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .text-paragraph, .text-paragraph1 {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 0.4rem;
+        width: 5rem;
+    }
+
+    .btn0, .btn1 {
+        width: 100px;
+    }
+
+    .fa-brands {
+        font-size: 18px;
+    }
+
+    .pic-container {
+        height: 150px;
+        width: 150px;
+    }
+
+    .pic-container img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .details-container {
+        padding: 1rem;
+    }
+
+    .experience-sub-title {
+        font-size: 1.5rem;
+    }
+
+    .project-title {
+        font-size: 1.2rem;
+    }
+
+    .contact-info-container1 {
+        padding: 0.5rem;
+    }
+
+    .form {
+        padding: 5px;
+    }
+
+    .form form {
+        max-width: 100%;
+    }
+
+    .form-row input[type="text"],
+    .form-row input[type="email"],
+    .form-row textarea {
+        padding: 10px;
+    }
+
+    .form-row input[type="button"] {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 768px) {
     .about-section {
-        display: block; /* Show the about section on mobile */
+        display: block; /* Ensure the about section is visible */
         padding: 20px;
     }
 }
 
+@media (max-width: 576px) {
+    .btn0, .btn1 {
+        width: 100px;
+    }
+
+    .fa-brands {
+        font-size: 18px;
+    }
+
+    .pic-container {
+        height: 150px;
+        width: 150px;
+    }
+
+    .pic-container img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .details-container {
+        padding: 1rem;
+    }
+
+    .experience-sub-title {
+        font-size: 1.5rem;
+    }
+
+    .project-title {
+        font-size: 1.2rem;
+    }
+
+    .contact-info-container1 {
+        padding: 0.5rem;
+    }
+
+    .form {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        display: block; /* Ensure the about section is visible */
+        padding: 20px;
+    }
+}
