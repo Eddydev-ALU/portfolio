@@ -123,7 +123,12 @@
         width: 6rem;
     }
 
-    .btn0, .btn1 {
+    .btn0{
+        color: black;
+        background-color: white;
+        border: 0.1rem solid black;
+    } 
+    .btn1 {
         width: 120px;
     }
 
