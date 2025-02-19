@@ -91,6 +91,9 @@
         align-items: center;
         height: auto;
     }
+    #projects .experience-details-container .about-containers .details-container{
+        width: 300px;
+    }
 
     .pic-container {
         height: 200px;
@@ -136,7 +139,7 @@
 
     .details-container {
         margin-bottom: 1rem;
-        margin-right: -30px;
+        margin-right: -38px;
     }
 
     .experience-details-container {
