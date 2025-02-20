@@ -78,6 +78,14 @@ a:hover span.material-symbols-outlined::before {
     color: black;
 }
 
+/* sticky behaviour */
+
+#main-navbar, #hamburger-navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
  /* Mobile view hamburger menu */
 
  #hamburger-navbar{
