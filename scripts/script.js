@@ -30,3 +30,23 @@ function scrollToTop() {
         behavior: 'smooth'
     });
 }
+
+// Add this to your existing JavaScript
+document.addEventListener('DOMContentLoaded', function() {
+    const textElement = document.querySelector('.text-paragraph1');
+    const texts = ["Software Engineer", "Software Developer", "DevOps Engineer", "Software Tester", "UI/UX Designer"];
+    let index = 0;
+
+    function typeText() {
+        textElement.textContent = texts[index];
+        textElement.style.animation = 'none';
+        setTimeout(() => {
+            textElement.style.animation = '';
+        }, 10);
+
+        index = (index + 1) % texts.length;
+        setTimeout(typeText, 3500); // Adjust the delay to match the CSS animation duration
+    }
+
+    typeText();
+});
