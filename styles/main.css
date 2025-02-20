@@ -265,6 +265,9 @@ section{
     color: white;
     background: black;
 }
+
+/* offcanvas menu for the about section */
+
 .off-canvas-menu {
     position: fixed;
     top: 0;
@@ -325,20 +328,6 @@ section{
 }
 .details-container1 p{
     color: black;
-}
-.skills-columns {
-    display: flex;
-    justify-content: space-between;
-}
-
-.skills-list {
-    list-style: none; /* Remove bullet points */
-    padding: 0;
-    flex: 1;
-}
-
-.skills-list li {
-    padding: 5px 0;
 }
 .book-call{
     display: flex;

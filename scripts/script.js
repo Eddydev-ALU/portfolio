@@ -1,3 +1,4 @@
+// hamburger menu option on mobile devices
 function openMenu(){
     const menu = document.querySelector(".menu-links");
     const icon = document.querySelector(".hamburger-icon");
@@ -5,7 +6,7 @@ function openMenu(){
     menu.classList.toggle("open");
     icon.classList.toggle("open");
 }
-
+// the about section off canvas menu on desktop view
 function toggleOffCanvas() {
     const offCanvasMenu = document.getElementById('off-canvas-menu');
     const overlay = document.getElementById('overlay');
@@ -31,7 +32,6 @@ function scrollToTop() {
     });
 }
 
-// Add this to your existing JavaScript
 document.addEventListener('DOMContentLoaded', function() {
     const textElement = document.querySelector('.text-paragraph1');
     const texts = ["Software Engineer", "Software Developer", "DevOps Engineer", "Software Tester", "UI/UX Designer"];
