@@ -273,7 +273,7 @@
 
 @media (max-width: 768px) {
     .about-section {
-        display: block; /* Ensure the about section is visible */
+        display: block; 
         padding: 20px;
     }
 }
@@ -320,7 +320,7 @@
 
 @media (max-width: 768px) {
     .about-section {
-        display: block; /* Ensure the about section is visible */
+        display: block; 
         padding: 20px;
     }
 }

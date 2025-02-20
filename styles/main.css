@@ -140,17 +140,17 @@ a:hover span.material-symbols-outlined::before {
  }
 
  .hamburger-icon .material-symbols-outlined::before {
-    content: 'menu'; /* Default icon */
+    content: 'menu'; 
     font-family: 'Material Symbols Outlined';
     font-size: 40px;
-    transition: content 0.3s ease-in-out; /* Smooth transition for icon change */
+    transition: content 0.3s ease-in-out; 
 }
 
 .hamburger-icon.open .material-symbols-outlined::before {
     content: 'close'; /* Change to the close icon when open */
 }
 
-/* profile section */
+/* profile section or hero section*/
 
 section{
     padding-top: 4vh;
@@ -294,7 +294,7 @@ section{
 
 .off-canvas-header {
     display: flex;
-    justify-content: space-between; /* Align content and close button to opposite sides */
+    justify-content: space-between; 
     align-items: center;
 }
 
@@ -356,8 +356,8 @@ section{
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    z-index: 1000; /* Ensure it is below the off-canvas menu */
-    display: none; /* Hide by default */
+    z-index: 1000; 
+    display: none; 
     transition: opacity 0.3s ease;
 }
 
@@ -576,7 +576,7 @@ footer p{
     text-align: center;
 }
 
-/* scroll button */
+/* scroll to top button */
 
 .scroll-to-top {
     position: fixed;
@@ -584,9 +584,9 @@ footer p{
     right: 20px;
     width: 50px;
     height: 50px;
-    background: none; /* Remove background color */
-    border: none; /* Remove border */
-    color: black; /* Set the color of the icon */
+    background: none; 
+    border: none; 
+    color: black; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -602,7 +602,7 @@ footer p{
 }
 
 .scroll-to-top i {
-    font-size: 30px; /* Adjust the size of the icon */
+    font-size: 30px; 
 }
 .fa-arrow-up:hover{
     cursor: pointer;

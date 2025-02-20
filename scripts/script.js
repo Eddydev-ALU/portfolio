@@ -24,7 +24,7 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Scroll to the top of the page when the button is clicked
+// Scroll to the top of the page when the button is clicked function
 function scrollToTop() {
     window.scrollTo({
         top: 0,
